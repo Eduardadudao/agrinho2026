@@ -1,24 +1,54 @@
-function mostrar(secao) {
-    let secoes = document.querySelectorAll(".card");
-
-    secoes.forEach(s => s.classList.add("hidden"));
-
-    document.getElementById(secao).classList.remove("hidden");
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0d0d0d;
+    color: white;
 }
 
-function calcular() {
-    let custo = Number(document.getElementById("custo").value);
-    let receita = Number(document.getElementById("receita").value);
+header {
+    background-color: #111;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid #00ff88;
+}
 
-    let eficiencia = ((receita - custo) / custo) * 100;
+h1 {
+    color: #00ff88;
+}
 
-    let resultado = document.getElementById("resultado");
+.card {
+    background-color: #1a1a1a;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+}
 
-    if (isNaN(eficiencia)) {
-        resultado.innerHTML = "Insira valores válidos.";
-        return;
-    }
+button {
+    background-color: #00ff88;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
 
-    resultado.innerHTML =
-        "📈 Eficiência agrícola estimada: " + eficiencia.toFixed(2) + "%";
+button:hover {
+    background-color: #00cc66;
+}
+
+input {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #111;
+    margin-top: 20px;
+    border-top: 2px solid #00ff88;
 }
