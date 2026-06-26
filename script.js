@@ -1,54 +1,21 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #0d0d0d;
-    color: white;
+function responder(correto) {
+    let resultado = document.getElementById("resultado");
+
+    if (correto) {
+        resultado.innerHTML = "✅ Correto! A tecnologia ajuda a reduzir desperdícios.";
+        resultado.style.color = "#00ff88";
+    } else {
+        resultado.innerHTML = "❌ Errado. Pense em sustentabilidade!";
+        resultado.style.color = "red";
+    }
 }
 
-header {
-    background-color: #111;
-    text-align: center;
-    padding: 20px;
-    border-bottom: 2px solid #00ff88;
-}
+function calcular() {
+    let custo = parseFloat(document.getElementById("custo").value);
+    let receita = parseFloat(document.getElementById("receita").value);
 
-h1 {
-    color: #00ff88;
-}
+    let lucro = receita - custo;
 
-.card {
-    background-color: #1a1a1a;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px #000;
-}
-
-button {
-    background-color: #00ff88;
-    border: none;
-    padding: 10px;
-    margin: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    border-radius: 5px;
-}
-
-button:hover {
-    background-color: #00cc66;
-}
-
-input {
-    padding: 10px;
-    margin: 5px;
-    border-radius: 5px;
-    border: none;
-}
-
-footer {
-    text-align: center;
-    padding: 15px;
-    background-color: #111;
-    margin-top: 20px;
-    border-top: 2px solid #00ff88;
+    document.getElementById("lucro").innerHTML =
+        "💰 Lucro: R$ " + lucro.toFixed(2);
 }
