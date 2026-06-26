@@ -2,67 +2,56 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>AgroPrecision Tech</title>
+    <title>AgroTech Inteligente</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header class="hero">
-    <h1>🌾 AgroPrecision Tech</h1>
-    <p>Soluções inteligentes para otimização agrícola baseada em dados</p>
+<header>
+    <h1>🌱 AgroTech Inteligente</h1>
+    <p>Matemática + Programação na Agricultura Moderna</p>
 </header>
 
-<nav>
-    <button onclick="mostrar('problema')">Problema</button>
-    <button onclick="mostrar('solucao')">Solução</button>
-    <button onclick="mostrar('tecnologia')">Tecnologias</button>
-    <button onclick="mostrar('dashboard')">Dashboard</button>
-</nav>
-
-<main>
-
-<section id="problema" class="card">
-    <h2>📉 Problema Identificado</h2>
+<section class="card">
+    <h2>👩‍🌾 Problema da Agricultura</h2>
     <p>
-        A agricultura moderna enfrenta desafios relacionados ao desperdício de insumos,
-        irrigação ineficiente e distribuição desigual de recursos no solo.
+        Um dos maiores desafios é o desperdício de água e fertilizantes,
+        causando prejuízos financeiros e impactos ambientais.
     </p>
 </section>
 
-<section id="solucao" class="card hidden">
-    <h2>💡 Solução Proposta</h2>
-    <p>
-        Aplicação de modelos matemáticos, programação linear e análise de dados
-        para otimizar a produção agrícola e reduzir custos operacionais.
-    </p>
-</section>
-
-<section id="tecnologia" class="card hidden">
-    <h2>⚙️ Tecnologias Aplicadas</h2>
+<section class="card">
+    <h2>💡 Soluções com Tecnologia</h2>
     <ul>
-        <li>Programação Linear para otimização de recursos</li>
-        <li>IoT (sensores de umidade e temperatura)</li>
-        <li>Inteligência Artificial para previsão agrícola</li>
-        <li>Geometria aplicada ao planejamento de áreas rurais</li>
+        <li>Programação Linear para otimizar produção</li>
+        <li>Uso de sensores e IoT no campo</li>
+        <li>IA para previsão de colheita</li>
+        <li>Drones para análise de plantações</li>
     </ul>
 </section>
 
-<section id="dashboard" class="card hidden">
-    <h2>📊 Simulação de Eficiência Agrícola</h2>
+<section class="card">
+    <h2>🧠 Mini Quiz Interativo</h2>
 
-    <label>Custo de Produção:</label>
-    <input type="number" id="custo">
-
-    <label>Receita Estimada:</label>
-    <input type="number" id="receita">
-
-    <button onclick="calcular()">Calcular Eficiência</button>
+    <p>1. O que ajuda a reduzir desperdício no campo?</p>
+    <button onclick="responder(true)">Tecnologia e sensores</button>
+    <button onclick="responder(false)">Mais fertilizante sempre</button>
 
     <p id="resultado"></p>
 </section>
 
-</main>
+<section class="card">
+    <h2>⚙️ Simulador Simples</h2>
+    <p>Digite o custo e a receita:</p>
+
+    <input type="number" id="custo" placeholder="Custo">
+    <input type="number" id="receita" placeholder="Receita">
+
+    <button onclick="calcular()">Calcular Lucro</button>
+
+    <p id="lucro"></p>
+</section>
 
 <footer>
     <p><strong>Aluno:</strong> Eduarda Lorrani</p>
