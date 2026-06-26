@@ -1,24 +1,28 @@
-# 🌾 AgroPrecision Tech
+# 🌱 AgroTech Inteligente
 
-## 📌 Descrição
-Projeto desenvolvido para demonstrar a aplicação de matemática, programação e tecnologias digitais na agricultura de precisão.
+Projeto escolar desenvolvido para demonstrar a aplicação da **matemática e programação na agricultura moderna**.
 
-## 🎯 Objetivo
-Reduzir desperdícios de insumos agrícolas por meio de modelos matemáticos e simulações computacionais.
+## 💡 Objetivo
+Mostrar como tecnologia, sensores, IA e matemática ajudam a reduzir desperdícios e aumentar a produtividade no campo.
 
-## ⚙️ Tecnologias
-- HTML5
-- CSS3
+## 🚜 Tecnologias usadas
+- HTML
+- CSS
 - JavaScript
 
-## 🧠 Conceitos aplicados
-- Programação linear
-- Análise de eficiência
-- IoT na agricultura
-- Inteligência artificial aplicada ao campo
-
-## 👩‍🎓 Desenvolvido por
+## 👩‍🎓 Aluna
 Eduarda Lorrani
 
 ## 👨‍🏫 Professor
 Luiz Alessandro
+
+## ⚙️ Funcionalidades
+- Página interativa
+- Quiz educativo
+- Simulador de lucro
+- Design moderno escuro
+
+## 📌 Como usar
+1. Baixe os arquivos
+2. Abra o `index.html`
+3. Use no navegador
